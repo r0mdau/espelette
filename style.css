@@ -1,0 +1,348 @@
+/* FEUILLE DE STYLE ROMAIN DAUBY 
+***********************************************************/
+
+html, body {
+height: 100%
+}
+
+body {
+margin : 0 ;
+padding : 0 ; 
+background : #FFFFFF url(images/bdeepsi.jpg) repeat; 
+background-position:center;
+text-align : center;
+font-family : verdana ;
+}
+
+/* CADRE CENTRE
+***********************************************************/
+#global { 
+position:absolute; 
+left: 50%;  
+top: 50%; 
+width: 400px; 
+height: 400px; 
+margin-top: -200px; /* moitié de la hauteur */ 
+margin-left: -200px; /* moitié de la largeur */ 
+border: 1px solid #000; 
+background: url(images/blank.jpg) repeat;
+/*effet d'ombre*/
+-webkit-box-shadow: 15px 15px 6px #706c70;
+-moz-box-shadow: 15px 15px 6px #706c70;
+box-shadow: 15px 15px 6px #4d4d4d;
+/*-moz-transform: scale(1) rotate(180deg) translate(400px, 400px) skew(10deg, 10deg);
+-webkit-transform: scale(1) rotate(180deg) translate(400px, 400px) skew(10deg, 10deg);
+-o-transform: scale(1) rotate(180deg) translate(400px, 400px) skew(10deg, 10deg);
+-ms-transform: scale(1) rotate(180deg) translate(400px, 400px) skew(10deg, 10deg);
+transform: scale(1) rotate(180deg) translate(400px, 400px) skew(10deg, 10deg);*/
+}
+
+/*#global:hover {
+-moz-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(0deg, 0deg);
+-webkit-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(0deg, 0deg);
+-o-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(0deg, 0deg);
+-ms-transform: scale(1) rotate(0deg) translate(0px, 0px) skew(0deg, 0deg);
+transform: scale(1) rotate(0deg) translate(0px, 0px) skew(0deg, 0deg);
+}*/
+
+
+#global span {
+font-size:0.4em;
+}
+
+#global p {
+padding:0;
+}
+
+#global2 { 
+position:absolute; 
+left: 50%;  
+top: 50%; 
+width: 800px; 
+height: auto; 
+margin-top:-250px; 
+margin-left: -400px; /* moitié de la largeur */ 
+border: 1px solid #000; 
+background: url(images/blank.jpg) repeat;
+}
+
+#middle{
+	width:400px;
+	height:340px;
+}
+
+#petit_recap table{
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	width:100%;
+}
+#petit_recap td{
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 0;
+}
+#petit_recap{
+	width:100%;
+	height:250px;
+	overflow: auto;
+}
+
+#petit_recap p{
+	font-size: 0.7em;
+}
+
+/* BOUTONS D'ENVOI DE FORMULAIRES CSS3
+***********************************************************/
+input[type="submit"] {
+font-family:Verdana, serif;
+font-weight:bold;
+font-size:0.9em;
+line-height:1;
+color:#444;
+border:none;
+text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#bbb));
+background-image: -moz-linear-gradient(0 100% 90deg, #fff, #bbb);
+background-color: #fff;
+-webkit-border-radius:20px;
+-moz-border-radius:20px;
+-o-border-radius:20px;
+-khtml-border-radius:20px;
+-ms-border-radius:20px;
+border-radius:20px;
+behaviour:url(border-radius.htc);
+-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/*on référence la keyframe uniquement valide sur le moteur Webkit */
+@-webkit-keyframes pulse {
+0% {
+	-webkit-box-shadow: 0 0 12px rgba(24, 185, 29, 0.2);
+}
+50% {
+	-webkit-box-shadow: 0 0 12px rgba(24, 185, 29, 0.9);
+}
+100% {
+	-webkit-box-shadow: 0 0 12px rgba(24, 185, 29, 0.2);
+}
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus {
+-webkit-animation: pulse 1.5s infinite ease-in-out; /*le bouton va clignoter*/
+}
+
+/*champs de saisies  clignotants */
+input[type="text"]:hover, input[type="text"]:focus {
+-webkit-animation: pulse 1.5s infinite ease-in-out; 
+}
+input[type="password"]:hover, input[type="password"]:focus {
+-webkit-animation: pulse 1.5s infinite ease-in-out; 
+}
+input[type="checkbox"]:hover, input[type="checkbox"]:focus {
+-webkit-animation: pulse 1.5s infinite ease-in-out; 
+}
+select:hover, select:focus {
+-webkit-animation: pulse 1.5s infinite ease-in-out; 
+}
+
+
+/* CSS ADMIN
+***********************************************************/
+.table {
+border: 0.1em dashed #000; /* contour du tableau */
+border-collapse: collapse;
+}
+
+.table td{
+padding: 20px 6px 20px 6px;
+border:0.1em dashed black;
+}
+
+
+/* CSS Enregistrement
+/* alignement champs de saisies des formulaires
+***********************************************************/
+.label label {
+float:right;
+color:black;
+}
+
+.label input {
+float:right;
+}
+
+/* CSS3 Boutons de navigation
+***********************************************************/
+a.foo {
+text-decoration:none;
+padding : 5px 10px;
+background : #9c3;
+color:white;
+font-weight:bold;
+-webkit-transition: background 0.3s ease 0.5s;
+-moz-transition: background 0.3s ease 0.5s;
+-o-transition: background 0.3s ease 0.5s;
+-khtml-transition: background 0.3s ease 0.5s;
+transition: background 0.3s ease 0.5s;
+-webkit-border-radius:20px;
+-moz-border-radius:20px;
+-o-border-radius:20px;
+-khtml-border-radius:20px;
+border-radius:20px;
+behaviour:url(border-radius.htc);
+}
+
+a.foo:hover, a.foo:focus {
+background:#690;
+}
+
+a.foo2 {
+text-decoration:none;
+padding : 5px 10px;
+background : #9c3;
+color:white;
+font-weight:bold;
+-webkit-transition: background 0.3s ease 0.5s;
+-moz-transition: background 0.3s ease 0.5s;
+-o-transition: background 0.3s ease 0.5s;
+-khtml-transition: background 0.3s ease 0.5s;
+transition: background 0.3s ease 0.5s;
+-webkit-border-radius:20px;
+-moz-border-radius:20px;
+-o-border-radius:20px;
+-khtml-border-radius:20px;
+border-radius:20px;
+behaviour:url(border-radius.htc);
+}
+
+a.foo2:hover, a.foo2:focus {
+background:#FF0000;
+}
+
+.centre {
+font-size: 1.7em;
+}
+
+/*  CHAT
+***********************************************************/
+#fermer{
+	position:absolute;
+	margin-left:370px;
+	margin-top:-32px;
+}
+#fermer:hover{
+	cursor:pointer;
+}
+
+#chat{
+	position:absolute;
+	margin-left:350px;
+	margin-top:-37px;
+}
+
+#scoreChat{
+	position:absolute;
+	margin-top:-25px;
+	font-weight:bold;
+	color:#690;
+	cursor:pointer;
+}
+
+#message-pseudo{
+	width:399px;
+	height:330px;
+}
+
+#message{
+	position:absolute;
+	width:300px;
+	height:330px;
+	font-size:0.7em;
+	text-align:left;
+	line-height:15px;
+	overflow:auto;
+}
+
+#pseudo{
+	position:absolute;
+	left:300px;
+	width:100px;
+	height:328px;
+	border-left:1px solid #9c3;
+	font-size:0.7em;
+	overflow:auto;
+}
+
+#saisie{
+	width:400px;
+	height:68px;
+}
+
+#saisie textarea{
+	margin-left:-76px;
+	width:320px;
+	height:64px;
+}
+
+.bouton{
+	display:inline;
+	margin-left:7px;
+	margin-top:5px;
+	position:absolute;
+	width:60px;
+	height:60px;
+	border-radius:10px;
+	background: #9c3;
+	-webkit-transition: background 0.3s ease 0.5s;
+	-moz-transition: background 0.3s ease 0.5s;
+	-o-transition: background 0.3s ease 0.5s;
+	-khtml-transition: background 0.3s ease 0.5s;
+	transition: background 0.3s ease 0.5s;
+}
+
+.bouton:hover, .bouton:focus {
+background:#690;
+cursor:pointer;
+}
+
+.txtenvoyer{
+	font-family:cursive;
+	position:absolute;
+	display:inline;
+	margin-left:8px;
+	margin-top:20px;
+	color:white;
+	font-weight:bold;
+}
+.txtenvoyer:hover{
+	cursor:pointer;
+}
+
+
+/*  FOOTER
+***********************************************************/ 
+   
+#footer {
+	width:400px;
+	height :35px;
+	font-size:0.7em;
+	margin-left:5px;
+}
+
+#footer p { 
+margin : 0 ;
+padding :0;
+text-align : center;
+color : #868686; 
+}
+
+#footer a { 
+color : #868686;
+text-decoration : none ;  
+}
+
+#footer a:hover, #footer a:focus { 
+color:red;  
+}

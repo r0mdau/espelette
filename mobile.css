@@ -1,0 +1,209 @@
+html, body {
+height: 100%
+}
+
+body {
+margin : 0 ;
+padding : 0 ;  
+text-align : center;
+font-family : verdana ;
+}
+
+/* CADRE CENTRE
+***********************************************************/
+#global { 
+  background: url(images/blank.jpg) repeat;
+}
+
+#global span {
+font-size:0.4em;
+}
+
+#global2 { 
+  background: url(images/blank.jpg) repeat;
+}
+
+/* BOUTONS D'ENVOI DE FORMULAIRES CSS3
+***********************************************************/
+input[type="submit"] {
+font-family:Verdana, serif;
+font-weight:bold;
+font-size:0.9em;
+line-height:1;
+color:#444;
+border:none;
+text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#bbb));
+background-image: -moz-linear-gradient(0 100% 90deg, #fff, #bbb);
+background-color: #fff;
+-webkit-border-radius:20px;
+-moz-border-radius:20px;
+-o-border-radius:20px;
+-khtml-border-radius:20px;
+-ms-border-radius:20px;
+border-radius:20px;
+behaviour:url(border-radius.htc);
+-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+input[type="submit"]:hover, input[type="submit"]:focus {
+-webkit-animation: pulse 1.5s infinite ease-in-out;
+-chrome-animation: pulse 1.5s infinite ease-in-out;
+-khtml-animation: pulse 1.5s infinite ease-in-out;
+-o-animation: pulse 1.5s infinite ease-in-out;
+-moz-animation: pulse 1.5s infinite ease-in-out;
+-ms-animation: pulse 1.5s infinite ease-in-out;
+animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* CSS ADMIN
+***********************************************************/
+.table {
+border: 0.1em dashed #000; /* contour du tableau */
+border-collapse: collapse;
+}
+
+.table td{
+padding: 20px 6px 20px 6px;
+border:0.1em dashed black;
+}
+
+/* CSS Enregistrement
+***********************************************************/
+.label label {
+float:right;
+color:black;
+}
+
+.label input {
+float:right;
+}
+
+/* CSS INDEX
+***********************************************************/
+a.foo {
+text-decoration:none;
+padding : 5px 10px;
+background : #9c3;
+color:white;
+font-weight:bold;
+-webkit-transition: background 0.3s ease 0.5s;
+-moz-transition: background 0.3s ease 0.5s;
+-o-transition: background 0.3s ease 0.5s;
+-khtml-transition: background 0.3s ease 0.5s;
+transition: background 0.3s ease 0.5s;
+-webkit-border-radius:20px;
+-moz-border-radius:20px;
+-o-border-radius:20px;
+-khtml-border-radius:20px;
+border-radius:20px;
+behaviour:url(border-radius.htc);
+}
+
+a.foo:hover, a.foo:focus {
+background:#690;
+}
+
+a.foo2 {
+text-decoration:none;
+padding : 5px 10px;
+background : #9c3;
+color:white;
+font-weight:bold;
+-webkit-transition: background 0.3s ease 0.5s;
+-moz-transition: background 0.3s ease 0.5s;
+-o-transition: background 0.3s ease 0.5s;
+-khtml-transition: background 0.3s ease 0.5s;
+transition: background 0.3s ease 0.5s;
+-webkit-border-radius:20px;
+-moz-border-radius:20px;
+-o-border-radius:20px;
+-khtml-border-radius:20px;
+border-radius:20px;
+behaviour:url(border-radius.htc);
+}
+
+a.foo2:hover, a.foo2:focus {
+background:#FF0000;
+}
+
+.centre {
+font-size: 1.9em;
+}
+
+/*  FOOTER
+***********************************************************/ 
+   
+#footer { 
+height :63px;
+text-align : center;
+font-size:0.7em;
+vertical-align:bottom;
+}
+
+#footer p { 
+margin : 0 ;
+padding :0;  
+color : #868686; 
+}
+
+#footer a { 
+color : #868686;
+text-decoration : none ;  
+}
+
+#footer a:hover, #footer a:focus { 
+text-decoration : underline;
+color:red;  
+}
+
+/*  MOBILE
+***********************************************************/ 
+
+@media (max-width: 640px) { 
+ 
+ /* passer tous les éléments de largeur fixe en largeur automatique */ 
+ body, element1, element2 { 
+   width: auto !important; 
+   margin: auto !important; 
+   padding: auto !important; 
+ } 
+ 
+ /* fixer une largeur maximale  de 100 % aux éléments potentiellement problématiques */ 
+ img, table, td, blockquote, code, pre, textarea, input, object, embed, video { 
+   max-width: 100% !important; 
+ } 
+ 
+ /* gestion des mots longs */ 
+ textarea, table, td, th, code, pre, samp { 
+   word-wrap: break-word; /* césure forcée */ 
+   white-space: pre-line; /* passage à la ligne spécifique pour les éléments à châsse fixe */ 
+ } 
+ 
+ /* Passer à une seule colonne (à appliquer aux éléments multi-colonnes) */ 
+ element1, element2 { 
+   float: none !important; 
+   width: auto !important 
+ } 
+ 
+ /* masquer les éléments superflus */ 
+ .hide_mobile { 
+   display: none !important; 
+ } 
+ 
+ /* Un message personnalisé */ 
+ body:before { 
+   content: "Version mobile"; 
+   display: block; 
+   color: #777; 
+   text-align: center; 
+   font-style: italic; 
+ } 
+}
+@media screen and (max-width:640px) and (orientation: landscape) { 
+  body { 
+   -webkit-text-size-adjust: 70%; 
+  } 
+}  
